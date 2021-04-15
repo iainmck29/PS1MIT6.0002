@@ -16,3 +16,23 @@ for cow in cows:
         add that cow & weight to it
         
         else add the cow to the current journey
+
+
+1b)
+
+create variable for egg weight in basket (set to 0)
+avail_weight = target_weight
+total_eggs = {}
+
+loop:
+    for egg in egg weights:
+        num_eggs = avail_weight//egg
+        total_eggs[egg] = num_eggs
+        remaining_weight = avail_weight % egg
+        avail_weight = remaining_weight
+
+check egg weight in basket
+if possible to add egg at largest quantity then add that egg
+else if not then try again with the next largest egg
+repeat until total weight is 99
+
